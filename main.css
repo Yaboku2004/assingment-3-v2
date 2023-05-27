@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(44, 156, 255);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 60px;
+    color: rgb(44, 156, 255);
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 30px;
+    color: rgb(44, 156, 255);
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 40px; 
+    transition: .3s;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: black;
+}
+
+.Main_page {
+    display: flex;
+    align-items: center;
+
+}
+
+.Main_page h1 {
+    margin-left: 70px;
+    font-size: 140px;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.Main_page h1 {
+    position:absolute;
+
+}
+
+.Main_page div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.Team_profile {
+    display:flex ;
+    align-items: center;
+}
+
+.Team_members {
+    max-width: 90%;
+}
+
+.Team_members h1 {
+    font-size: 50px;
+    color: rgb(44, 156, 255);
+    font-weight: 700px;
+    text-decoration: none;
+    margin-left: 50%;
+    margin-bottom: 50px;
+    border: 3px solid black;
+    border-radius: 8px;
+    width:max-content;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    display: flex;
+    align-items:center;
+}
+
+
+
+.Team_members h3 {
+    font-size: 35px;
+    color: rgb(44, 156, 255);
+    font-weight: 700px;
+    text-decoration: none;
+    margin-left: 10%;
+}
+.Team_members p {
+    color: white;
+    font-size: 25px;
+    font-weight: 700px;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+
+.Ov {
+    font-weight: 700px;
+    max-width: 90%;
+}
+
+.Ov h1{
+    font-size: 50px;
+    margin-left: 50%;
+    font-weight: 700px;
+
+}
+
+.Ov h2 {
+    font-size: 40px;
+    margin-left: 10%;
+    font-weight: 700px;
+}
+
+.Ov p {
+    font-size: 25px;
+    color: blanchedalmond;
+    margin-left: 10%;
+    font-weight: 700px;
+}
+
+.Pro_dis {
+    font-weight: 700px;
+    max-width: 90%;
+}
+
+.Pro_dis h1 {
+    margin-left: 50%;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.Pro_dis h3 {
+    margin-left: 10%;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.Pro_dis p {
+    max-width: 2000px;
+    color: coral;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+.SaJ {
+    font-weight: 700px;
+    margin-top: 50px;
+    height: -100px;
+    max-width: 90%;
+}
+
+.SaJ h1 {
+    margin-left:45%;
+    font-size: 50px;
+    height: -100px;
+}
+
+.SaJ p {
+    max-width: 2000px;
+    color: crimson;
+    font-size: 25px;
+    margin-left: 10%;
+
+}
+
+.Gr-Rf {
+    margin-top: 100px;
+    font-weight: 800px;
+    max-width: 90%;
+
+}
+.Gr-Rf h1 {
+    font-size: 50px;
+    margin-left: 45%;
+}
+.Gr-Rf h3 {
+    font-size: 35px;
+    margin-left: 10%;
+}
+.Gr-Rf p {
+    font-size: 25px;
+    margin-left: 10%;
+}
+/* KEYFRAM ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
